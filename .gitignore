@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Gatsby-specific build outputs
+.cache/
+public/
+
+# Environment variables
+.env
+.env.*.local
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# macOS-specific files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Thumbnails
+.thumbnails/
