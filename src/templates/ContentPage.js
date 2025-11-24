@@ -45,7 +45,7 @@ const heroImageFor = (hero) => {
       // Fallback: bruk samme fjordillustrasjon som forsiden
       return (
         <StaticImage
-          src="../images/molland-hero-illustration.png"
+          src="../images/hero-fjord-cow.png"
           alt="Angusfe og fjordlandskap"
           placeholder="blurred"
           layout="constrained"

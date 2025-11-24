@@ -25,7 +25,7 @@
     },
     "homepage": "https://johannmo.github.io/mollandangus-site",
     "scripts": {
-        "build": "gatsby build --prefix-paths",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+        "build": "gatsby build",
+        "deploy": "gatsby build && gh-pages -d public"
     }
 }
