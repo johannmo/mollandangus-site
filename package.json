@@ -4,10 +4,8 @@
     "private": true,
     "description": "GatsbyJS site for Molland Angus",
     "scripts": {
-        "develop": "gatsby develop",
         "build": "gatsby build",
-        "serve": "gatsby serve",
-        "clean": "gatsby clean"
+        "deploy": "gatsby build && gh-pages -d public"
     },
     "dependencies": {
         "gatsby": "^5.12.0",
@@ -23,9 +21,5 @@
     "devDependencies": {
         "gh-pages": "^6.3.0"
     },
-    "homepage": "https://johannmo.github.io/mollandangus-site",
-    "scripts": {
-        "build": "gatsby build",
-        "deploy": "gatsby build && gh-pages -d public"
-    }
+    "homepage": "https://johannmo.github.io/mollandangus-site"
 }
