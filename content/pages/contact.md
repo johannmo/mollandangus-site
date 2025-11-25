@@ -4,4 +4,4 @@ slug: "/contact"
 hero: "yard"
 ---
 
-Har du spørsmål, eller vil du tinga kjøt? Ta kontakt.
+Ønsker du å få beskjed neste gang me har kjøt tilgjengeleg? Ta kontakt.
