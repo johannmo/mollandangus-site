@@ -2,6 +2,7 @@
 title: Produkt
 slug: "/products"
 hero: "animals"
+description: "Produkt frå Molland Angus"
 ---
 
 Kjøtet me sel er Nortura nisjeslakt, dvs. at Nortura gjer slakting, møyrning, partering, nedfrysing og transport ut til oss. Me avtalar så henting/transport samt ev. oppbevaring med våre kundar.

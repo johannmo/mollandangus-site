@@ -2,6 +2,7 @@
 title: Om garden
 slug: "/about"
 hero: "farm"
+description: "Om garden Molland – drift, dyrevelferd og landskap nær fjord og fjell."
 ---
 
 Me er opptekne av god dyrevelferd, roleg drift og gode beiteområde. Det gir dyr

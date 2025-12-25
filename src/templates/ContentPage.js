@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import { StaticImage } from "gatsby-plugin-image";
 import "../styles/global.css";
 
@@ -57,26 +58,29 @@ const heroImageFor = (hero) => {
 
 const ContentPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
-  const { title, hero } = frontmatter;
+  const { title, hero, description } = frontmatter;
 
   return (
-    <Layout>
-      {/* HERO – IDENTISK RAMME SOM PÅ FORSIDEN */}
-      <div className="hero-banner-wrapper">
-        <div className="hero-banner">
-          {heroImageFor(hero)}
+    <>
+      <SEO title={title} description={description} />
+      <Layout>
+        {/* HERO – IDENTISK RAMME SOM PÅ FORSIDEN */}
+        <div className="hero-banner-wrapper">
+          <div className="hero-banner">
+            {heroImageFor(hero)}
+          </div>
         </div>
-      </div>
 
-      {/* INNHOLD */}
-      <section
-        className="content"
-        style={{ maxWidth: "780px", margin: "3rem auto", padding: "0 1.5rem" }}
-      >
-        <h1 style={{ fontSize: "2.4rem", marginBottom: "0.6rem" }}>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </section>
-    </Layout>
+        {/* INNHOLD */}
+        <section
+          className="content"
+          style={{ maxWidth: "780px", margin: "3rem auto", padding: "0 1.5rem" }}
+        >
+          <h1 style={{ fontSize: "2.4rem", marginBottom: "0.6rem" }}>{title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </section>
+      </Layout>
+    </>
   );
 };
 
@@ -88,6 +92,7 @@ export const query = graphql`
       frontmatter {
         title
         hero
+        description
       }
     }
   }

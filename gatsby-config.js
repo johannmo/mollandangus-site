@@ -5,6 +5,7 @@ module.exports = {
     description: "Molland Angus – naturleg storfekjøt fra Mollandsmarki",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
