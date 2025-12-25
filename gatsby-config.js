@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Molland Angus",
-    siteUrl: "https://example.com",
-    description: "Molland Angus – naturlig storfekjøtt fra Mollandsmarki",
+    siteUrl: "https://www.mollandangus.no",
+    description: "Molland Angus – naturleg storfekjøt fra Mollandsmarki",
   },
   plugins: [
     "gatsby-plugin-image",
