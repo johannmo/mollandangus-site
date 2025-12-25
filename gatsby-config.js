@@ -5,9 +5,18 @@ module.exports = {
     description: "Molland Angus – naturleg storfekjøt fra Mollandsmarki",
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.mollandangus.no",
+        sitemap: "https://www.mollandangus.no/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }]
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
