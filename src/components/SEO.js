@@ -12,6 +12,11 @@ export default function SEO({ title, description }) {
     name: fallbackTitle,
     description: fallbackDescription,
     url: "https://mollandangus.no",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 61.32317356534566,
+      longitude: 7.280927778175042,
+    }, 
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mollandsmarki 493",
