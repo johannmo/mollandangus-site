@@ -14,7 +14,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.mollandangus.no",
-        sitemap: "https://www.mollandangus.no/sitemap.xml",
+        sitemap: "https://www.mollandangus.no/sitemap-index.xml",
         policy: [{ userAgent: "*", allow: "/" }]
       }
     },
