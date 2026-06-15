@@ -1,12 +1,14 @@
 import * as React from "react";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import { StaticImage } from "gatsby-plugin-image";
 import "../styles/global.css";
 
 const IndexPage = () => {
   return (
+    <>
+    <SEO title="Molland Angus" description="Molland Angus – naturleg storfekjøt fra Mollandsmarki" />
     <Layout>
-      {/* HERO – SAMME RAMME SOM INNHOLDSSIDENE */}
       <div className="hero-banner-wrapper">
         <div className="hero-banner">
           <StaticImage
@@ -19,7 +21,6 @@ const IndexPage = () => {
         </div>
       </div>
 
-      {/* TEKSTDELEN UNDER HERO */}
       <section
         style={{
           textAlign: "center",
@@ -44,6 +45,7 @@ const IndexPage = () => {
 
       </section>
     </Layout>
+    </>
   );
 };
 
