@@ -11,7 +11,7 @@ export default function SEO({ title, description }) {
     "@type": "LocalBusiness",
     name: fallbackTitle,
     description: fallbackDescription,
-    url: "https://molland-angus.no",
+    url: "https://mollandangus.no",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mollandsmarki 493",
